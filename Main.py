@@ -17,10 +17,10 @@ class Stack:
             self.items.append(data)
 
     def pop(self):
-        if not self.is_empty():
+        if   self.is_empty():
             self.top-=1
-            self.items.del[-1]
-
+            del self.items[-1]
+            
     def status(self):
         for i in self.items:
             print(i)
